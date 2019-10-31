@@ -23,7 +23,7 @@ android {
     }
 
     buildTypes {
-        debug{
+        debug {
             debuggable true
             minifyEnabled false
             shrinkResources false
@@ -38,16 +38,16 @@ android {
     }
 
     flavorDimensions "env"
-    productFlavors{
+    productFlavors {
         development {
             dimension "env"
             applicationId "com.abrahamlay.newmovieapp.dev"
         }
-        staging{
+        staging {
             dimension "env"
             applicationId "com.abrahamlay.newmovieapp.dev"
         }
-        production{
+        production {
             dimension "env"
             applicationId 'com.abrahamlay.newmovieapp'
         }
@@ -70,6 +70,14 @@ dependencies {
 
     //image processor
     implementation libs.glide
+
+    implementation libs.rxjava
+
+
+    //database
+    implementation support.room
+    kapt support.roomCompiler
+    implementation support.roomCommon
 
     //navigation
     implementation support.navigationUi

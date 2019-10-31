@@ -20,13 +20,13 @@ ext {
     androidxVersion = '1.0.0'
     coreVersion = "1.1.0"
     pagingVersion = '2.1.0'
-    roomVersion = '2.0.0'
+    roomVersion = '2.1.0-alpha01'
     lifecycleVersion = '2.2.0'
     navVersion = "2.0.0"
     koinVersion = '2.0.1'
 
     //kotlin std lib
-    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     //test
     jUnitVersion = '4.12'
@@ -55,10 +55,12 @@ ext {
             recyclerview      : "androidx.recyclerview:recyclerview:$androidxVersion",
             support           : "androidx.legacy:legacy-support-v4:$androidxVersion",
             design            : "com.google.android.material:material:$androidxVersion",
-            kotlinextensions  : "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$kotlin_version",
+            kotlinextensions  : "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$kotlinVersion",
             core              : "androidx.core:core-ktx:$coreVersion",
-            roomcompiler      : "androidx.room:room-compiler:$roomVersion",
+            roomCompiler      : "androidx.room:room-compiler:$roomVersion",
             room              : "androidx.room:room-runtime:$roomVersion",
+            roomRxJava        : "androidx.room:room-rxjava2:$roomVersion",
+            roomCommon        : "androidx.room:room-common:$roomVersion",
             paging            : "androidx.paging:paging-runtime:$pagingVersion",
             lifecycle         : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion",
             lifecycleVM       : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
