@@ -1,9 +1,9 @@
-package ir.hosseinabbasi.presentation.common.transformer
+package com.abrahamlay.abrahamalodokter.common.transformer
 
 import io.reactivex.Single
 import io.reactivex.SingleSource
 import io.reactivex.schedulers.Schedulers
-import ir.hosseinabbasi.domain.common.transformer.STransformer
+import com.abrahamlay.domain.common.transformer.STransformer
 
 /**
  * Created by Dr.jacky on 10/18/2018.

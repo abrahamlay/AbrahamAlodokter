@@ -6,7 +6,7 @@ import com.abrahamlay.domain.usecase.user.GetUserUseCase
 import com.abrahamlay.domain.usecase.user.GetUserUseCaseImpl
 import com.abrahamlay.domain.usecase.user.InsertUserUseCase
 import com.abrahamlay.domain.usecase.user.InsertUserUseCaseImpl
-import ir.hosseinabbasi.presentation.common.transformer.AsyncSTransformer
+import com.abrahamlay.abrahamalodokter.common.transformer.AsyncSTransformer
 import org.koin.dsl.module
 
 /**

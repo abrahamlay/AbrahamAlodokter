@@ -2,10 +2,10 @@ package com.abrahamlay.data.db
 
 import androidx.room.Delete
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy.*
+import androidx.room.OnConflictStrategy.IGNORE
+import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Update
 import io.reactivex.Flowable
-import io.reactivex.Single
 
 
 /**
@@ -13,6 +13,8 @@ import io.reactivex.Single
  */
 interface BaseDao<T> {
     fun select(id: Long): Flowable<T>
+
+    fun select(username: String, password: String): Flowable<T>
 
 //    fun selectAllPaged(): DataSource.Factory<Int, T>
 
@@ -29,7 +31,7 @@ interface BaseDao<T> {
     fun update(ts: List<T>)
 
     @Delete
-    fun delete(t: T): Single<Int>
+    fun delete(t: T): Unit
 
     @Delete
     fun delete(ts: List<T>)

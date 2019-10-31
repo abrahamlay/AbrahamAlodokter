@@ -15,8 +15,8 @@ interface UserDao : BaseDao<UserData.User> {
     @Query("SELECT * FROM user_table WHERE id = :id")
     override fun select(id: Long): Flowable<UserData.User>
 
-//    @Query("SELECT * FROM user_table ORDER BY id")
-//    override fun selectAllPaged(): DataSource.Factory<Int, UserData.User>
+    @Query("SELECT * FROM user_table WHERE username = :username AND password = :password")
+    override fun select(username: String, password: String): Flowable<UserData.User>
 
     @Query("DELETE FROM user_table")
     override fun truncate()
