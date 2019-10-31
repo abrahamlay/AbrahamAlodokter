@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import com.abrahamlay.abrahamalodokter.BuildConfig
 import com.abrahamlay.abrahamalodokter.R
 import com.abrahamlay.abrahamalodokter.ui.base.BaseActivity
 import com.abrahamlay.abrahamalodokter.ui.main.MainActivity
@@ -25,7 +26,7 @@ class AuthActivity() : BaseActivity<AuthViewModel>() {
             Entity.User(
                 0,
                 "abrahamlay", "bram123",
-                "android.resource://com.abrahamlay.abrahamalodokter/" + R.drawable.img_arsenal,
+                "android.resource://${BuildConfig.APPLICATION_ID}/" + R.drawable.img_arsenal,
                 "male",
                 "085695985073"
             )
